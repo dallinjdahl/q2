@@ -1,0 +1,124 @@
+.so plan.so
+.blm bp
+.nr D 10
+.nr d \nD-1 1
+.ce
+MISSION
+.pp
+My mission statement here. See 7 habits, chapter 2.
+
+.ce
+ROLES
+.hr
+.ce 2
+Disciple \(** Wife \(** Mother
+Daughter \(** Sister \(** Friend \(** Student
+.sp 2l
+.ce
+GOALS
+.hr
+.nf
+Get up at 6
+Keep house clean
+Go on a run
+.fi
+
+.date Sunday \n+d
+.ebeg
+.\"quadrant, time, minutes/10, event
+2	1200	12	Church
+.eend
+.lns 16
+
+.date Monday \n+d
+.ebeg
+2	T		Take car back in
+.eend
+.lns 16
+
+.date Tuesday \n+d
+.ebeg
+4	0930	3	Capstone Bagels (wear shirt)
+1	1530	8	551 Final Review
+.eend
+.lns 16
+
+.date Wednesday \n+d
+.ebeg
+1	T		fnd Writing due
+1	2300		424 Exam 4 closes
+.eend
+.lns 16
+
+.date Thursday \n+d
+.ebeg
+			Reading Day
+1	T		Student Ratings due
+2	1900	6	Party at Brian's
+.eend
+.lns 15
+
+.date Friday \n+d
+.ebeg
+				Passover Starts
+1	1100	18	Capstone Final
+2		12	Date Night
+.eend
+.lns 15
+
+.date Saturday \n+d
+.lns 17
+
+.ta \n(.luR
+.nr d +1 6
+\nd	\n+d
+.hr
+.peek
+17	Easter
+19	Grad pictures
+20	Last Day of Finals
+21	Commencment	083018
+21	Grad Party	160009
+23	Tire rotation	0930
+.epeek
+.lns 14
+
+.ce
+TODO
+.hr
+.nf
+Move trunk
+Put bikes somewhere
+Putty whiteboard
+Vaccuum dirt
+Organize pantry
+Blackout Curtains
+Repot Succulents
+DI box
+.fi
+.hr
+.lns 12
+
+.ce
+Notes
+.hr
+.lns 18
+
+.ce
+Notes
+.hr
+.lns 18
+
+.budget
+
+.budget
+
+.ce 8
+Be Proactive
+Begin With the End in Mind
+Put First Things First
+Think Win-Win
+Seek First to Understand\(em
+Then to Be Understood
+Synergize
+Sharpen the Saw

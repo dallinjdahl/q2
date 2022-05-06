@@ -1,0 +1,167 @@
+.fp - R CMR12
+.fp - B CMBX12
+.fp - I CMMI12
+.fp - CMEX CMEX10
+.fp - CMSY CMSY10
+.fspecial R CMEX CMSY
+.ps 8
+.vs 9p
+.po .3i
+.ll 2.15i
+.nr M \n(.o
+.pl 4.25i
+.ad pb
+.de pp
+.ti .2i
+..
+.de hd
+'sp .3i
+..
+.de ft
+'bp
+..
+.de en
+\c
+.bp
+\c
+..
+.em en
+.wh 0 hd
+.wh -.3i ft
+.PS
+define hours {
+move right 1.4
+A: box "\(bu" ht .08 wid .08
+box "\(bu" ht .08 wid .08
+box "\(bu" ht .08 wid .08
+box "\(bu" ht .08 wid .08
+move .08
+B: box "\(bu" ht .08 wid .08
+box "\(bu" ht .08 wid .08
+box "\(bu" ht .08 wid .08
+box "\(bu" ht .08 wid .08
+move to A
+move left .04
+move down .08
+right
+C: box "\(bu" ht .08 wid .08
+box "\(bu" ht .08 wid .08
+box "\(bu" ht .08 wid .08
+box "\(bu" ht .08 wid .08
+move .08
+D: box "\(bu" ht .08 wid .08
+box "\(bu" ht .08 wid .08
+box "\(bu" ht .08 wid .08
+box "\(bu" ht .08 wid .08
+"6 " at A.w rjust
+"10 " at B.w rjust
+"14 " at C.w rjust
+"18 " at D.w rjust
+}
+.PE
+.de budget
+.ta 1.1ic 1.6ic 1.9ic
+Description	Act	\(+-	Bal
+.sp -1.8l
+.PS
+line right 2.15
+move left .35
+move up .14
+line down 3.6
+move left .35
+line up 3.6
+move left .5
+line down 3.6
+move up 3.3
+move left .95
+line right 2.15
+move down .15
+line left 2.15
+move down .15
+line right 2.15
+move down .15
+line left 2.15
+move down .15
+line right 2.15
+move down .15
+line left 2.15
+move down .15
+line right 2.15
+move down .15
+line left 2.15
+move down .15
+line right 2.15
+move down .15
+line left 2.15
+move down .15
+line right 2.15
+move down .15
+line left 2.15
+move down .15
+line right 2.15
+move down .15
+line left 2.15
+move down .15
+line right 2.15
+move down .15
+line left 2.15
+move down .15
+line right 2.15
+move down .15
+line left 2.15
+move down .15
+line right 2.15
+move down .15
+line left 2.15
+move down .15
+line right 2.15
+move down .15
+line left 2.15
+move down .15
+.PE
+..
+.de hr
+.sp -.7l
+\h'|0'\l'\n(.lu\(ul'
+.sp .2l
+..
+.de date 
+.sp .5l
+\\$1 \\$2
+.nr a \(.nl
+.sp -1.5l
+.ps -5
+.vs -5
+.PS
+hours
+.PE
+.ps
+.vs
+.sp \na
+.hr
+..
+.de ebeg
+.ta .35iR +.2iR +.1i
+.nf
+..
+.de eend
+.fi
+.hr
+..
+.de ln
+.sp 1
+.hr
+..
+.de lns
+.if \\$1 \{\
+.ln
+.lns \\$1-1 \}
+..
+.de peek
+.ta .2i \n(.luR
+.nf
+..
+.de epeek
+.fi
+.hr
+..
