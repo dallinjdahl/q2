@@ -1,0 +1,61 @@
+Q2
+
+This is a system for generating planners.  It is inspired by the 7 Habits
+of Highly Effective People, by Stephen Covey.  Thus, it has space for a
+mission statement, roles, goals, and every event is categorized according
+to the urgency-importance matrix.  It is designed to be a weekly planner,
+with a preview of the next week.  In addition, the whole thing fits on
+a single (double-sided) sheet of 8.5x11 paper.
+
+Usage
+
+Given a .q2 file, edit mkfile to specify it in the src variable.
+This variable can contain a list of files, to support generating
+several planners.  Assuming the paths are correct and the prerequisites
+satsified (see mkfile), you should see 2 generated files, a .pdf file
+and a .imp.pdf file.  The .pdf is a straightforward page-by-page layout
+of the planner, mostly used for checking layout within the planner.
+The .imp.pdf file is a imposition layout, limited to exactly 2 pages.
+This can be printed, folded, and cut to make a booklet.  Staples or
+thread can then be used to bind it.
+
+Novel Features
+
+As a planner, it supports both listing events with their time quadrants,
+start times and durations, as well as indicating availability during
+the day.  However, these features are separated.
+
+An event listing contains a quadrant number, a 24hr based start time,
+and the duration in minutes, divided by 10.  I've found that this
+provides uniformity of format and enough granularity to accomodate
+various durations.
+
+The availability is indicated by the boxes in the top right of every
+calendar page.  There are 16 boxes, split into 4 banks of 4.  Each bank is
+numbered with a 24hr based hour, indicating the start time of that bank.
+During a planning session, these boxes are colored in to indicate the
+times during which you are unavailable.  For example, if I have a meeting
+from 7am-10am, I would color in the last 3 boxes on the first bank.
+Each box has a dot in the middle to easily allow for splitting hours.
+
+This means that you can have routine events that you don't shedule into
+your planner (mostly because you never forget them), but still have a
+clear overview of when you are available.
+
+The next week overview page indicates the date available for the next
+week, with the first date in the top left (Sunday), and the last date
+of that week (Saturday) in the top right.
+
+Also on this page, overview events can optionally have a start time and
+duration string.  If I have an event starting at 2:30pm, and lasting
+for 2 hours, its description string would be 143012.
+
+Pages 14 and 15 of the planner contain budgeting sheets, which include
+an account specifier.  This enables double-entry ledger accounting,
+allowing you to keep track of finances in multiple accounts with ease.
+
+Source Format
+
+Note that planner files are written in troff.  A set of helper macros
+is defined in plan.so, and examples are given in demo.q2.  The troff
+user manual will be invaluable in understanding the format.
